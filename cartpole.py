@@ -9,11 +9,13 @@ def cartpole_run():
     env=gym.make('CartPole-v1')
     env.reset()
     at=0
+    Qt=0
 
     for i_episode in range(20):
         observation = env.reset()
         for t in range(500):
             env.render()
+            #Qt=reward+
 
             action = at
             #action=np.random.uniform(-1.0,1.0,size=action_size)
